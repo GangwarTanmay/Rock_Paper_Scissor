@@ -1,0 +1,227 @@
+body{
+    margin: 0px;
+    width: 100%;
+}
+.navBar{
+    background-color: #030637;
+    height: 100px;
+    width: 100%;
+    color: white;
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.head1{
+    color: #F4CE14;
+    margin: 0px;
+}
+
+.heading{
+    margin: 0px;
+}
+
+.custom-hr{
+    height: 2px;
+    width: 100%;
+    background-color: #FDB827;
+    margin-top: 2px;
+}
+
+.main{
+    height: 88vh;
+    width: 100%;
+    background-image: url('../images/bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 0.1px solid rgba(0,0,0,0);
+}
+
+.playground1{
+    height: 85%;
+    width: 90%;
+    margin: 50px auto;
+    background: rgba(0, 0, 0, 0.6);
+    border: 0.01px solid rgba(0,0,0,0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.playground2{
+    height: 85%;
+    width: 90%;
+    margin: 50px auto;
+    background: rgba(0, 0, 0, 0.6);
+    border: 0.01px solid rgba(0,0,0,0);
+    text-align: center;
+    display: none;
+    animation: fadeIn 3s;
+}
+
+.welcome-box{
+    height: 70%;
+    width: 90%;
+    margin: 0px auto;
+    color: #F4CE14;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.Start-button{
+    margin-top: 10px;
+    height: 50px;
+    padding: 10px;
+    border: 3px solid white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    border-radius: 5px;
+    color: white;
+    background: transparent;
+}
+
+.Start-button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.board{
+    height: 60%;
+    width: 90%;
+    margin: 0px auto;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border: 1px solid rgba(0,0,0,0);
+}
+
+.computer{
+    height: 80%;
+    width: 49%;
+    float: left;
+    border: 1px solid rgba(0,0,0,0);
+}
+
+.user{
+    height: 80%;
+    width: 48%;
+    float: right;
+    border: 2px solid rgba(0,0,0,0);
+}
+
+.choice-buttons{
+    margin: 10px 15px;
+}
+
+.box{
+    margin: 30px auto;
+    height: 200px;
+    width: 200px;
+    border: 1px solid rgba(0,0,0,0);
+}
+
+.userPlay{
+    background-image: url(../images/fist.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.computerPlay{
+    background-image: url(../images/fist.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#show-chance{
+    color: #F4CE14;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#logo{
+    height: 400px;
+}
+
+.welcome-box>h1{
+font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: 480px) and (min-width: 320px){
+    .box{
+        height: 70px;
+        width: 70px;
+    }
+
+    .board{
+        height: 52%;
+    }
+
+    .playground{
+        height: 60%;
+    }
+    .main{
+        background-image: url(../images/mobile.jpg);
+    }
+
+    #logo{
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 768px) and (min-width: 481px){
+    .box{
+        height: 180px;
+        width: 180px;
+    }
+
+    .board{
+        height: 62%;
+    }
+
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px){
+    .box{
+        height: 180px;
+        width: 180px;
+    }
+
+    .board{
+        height: 50%;
+    }
+
+    .playground{
+        height: 60%;
+    }
+
+    .welcome-box>h1{
+        margin: 0px auto;
+    }
+}
