@@ -18,8 +18,8 @@
     <title>Rock Paper Scissor</title>
   </head>
   <body>
-    <audio autoplay loop>
-      <source src="media/alanwalker_faded_ncs.mp3" />
+    <audio autoplay loop id="audio">
+      <source src="media/alanwalker_faded_ncs.mp3" type="audio/mpeg" />
     </audio>
     <div class="loader" id="loader">
       <div class="outer"></div>
@@ -27,54 +27,56 @@
 
     <div id="container">
       <div class="navBar">
-      <h1 class="heading"><span class="head1">Rock</span> Paper Scissor</h1>
-    </div>
-    <div class="custom-hr"></div>
-    <div class="main">
-      <div class="playground1" id="playground1">
-        <div class="welcome-box" id="welcome-box">
-          <img
-            src="images/Untitled_design-removebg-preview.png"
-            alt="Loading..."
-            id="logo"
-          />
-          <h1>Welcome to the game.</h1>
-        </div>
+        <h1 class="heading"><span class="head1">Rock</span> Paper Scissor</h1>
       </div>
-      <div class="playground2" id="playground2">
-        <div class="board" id="board">
-          <div class="computer">
-            <h2>Computer</h2>
-            <div class="computerPlay box" id="computerSign"></div>
-            <div>
-              <h3>Computer's Score : <span id="compScore">0</span></h3>
+      <div class="custom-hr"></div>
+      <div class="main">
+        <div class="playground1" id="playground1">
+          <div class="welcome-box" id="welcome-box">
+            <img
+              src="images/Untitled_design-removebg-preview.png"
+              alt="Loading..."
+              id="logo"
+            />
+            <h1>Welcome to the game.</h1>
+          </div>
+        </div>
+        <div class="playground2" id="playground2">
+          <div class="board" id="board">
+            <div class="computer">
+              <h2>Computer</h2>
+              <div class="computerPlay box" id="computerSign"></div>
+              <div>
+                <h3>Computer's Score : <span id="compScore">0</span></h3>
+              </div>
+            </div>
+
+            <div class="user">
+              <h2>You</h2>
+              <div class="userPlay box" id="userSign"></div>
+              <div>
+                <h3>Your Score : <span id="userScore">0</span></h3>
+              </div>
             </div>
           </div>
 
-          <div class="user">
-            <h2>You</h2>
-            <div class="userPlay box" id="userSign"></div>
-            <div>
-              <h3>Your Score : <span id="userScore">0</span></h3>
-            </div>
+          <div class="chance">
+            <h3 id="show-chance">Ready to Shoot 🤞</h3>
+          </div>
+
+          <div class="choices" id="choices">
+            <button class="Start-button choice-buttons" id="rock">Rock</button>
+            <button class="Start-button choice-buttons" id="paper">
+              Paper
+            </button>
+            <button class="Start-button choice-buttons" id="scissor">
+              Scissor
+            </button>
+            <br />
+            <button class="Start-button" id="Reset">Reset Score</button>
           </div>
         </div>
-
-        <div class="chance">
-          <h3 id="show-chance">Ready to Shoot 🤞</h3>
-        </div>
-
-        <div class="choices" id="choices">
-          <button class="Start-button choice-buttons" id="rock">Rock</button>
-          <button class="Start-button choice-buttons" id="paper">Paper</button>
-          <button class="Start-button choice-buttons" id="scissor">
-            Scissor
-          </button>
-          <br />
-          <button class="Start-button" id="Reset">Reset Score</button>
-        </div>
       </div>
-    </div>
     </div>
     <script src="js/script.js"></script>
   </body>
