@@ -6,6 +6,12 @@ window.onload = () => {
     container.style.display = "initial";
 }
 
+document.addEventListener("click", () => {
+
+    let audio = document.getElementById("audio");
+    audio.play();
+})
+
 let changeBoard = () => {
     let pg1 = document.getElementById("playground1");
     pg1.style.display = "none";
