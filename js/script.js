@@ -1,3 +1,11 @@
+window.onload = () => {
+    let loader = document.getElementById('loader');
+    let container = document.getElementById('container');
+
+    loader.style.display = "none";
+    container.style.display = "initial";
+}
+
 let changeBoard = () => {
     let pg1 = document.getElementById("playground1");
     pg1.style.display = "none";
